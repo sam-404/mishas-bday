@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+<title> Misha is Babey</title>
+  </head>
+  <body>
+    <h1>Happy Birthday Misha!
+      Love you :) Have a great day!
+    </h1>
+    <canvas id="birthday"></canvas>
+    <script src="script1.js"></script>
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+      function pause(){
+        var audio = document.getElementById("audio");
+        audio.pause();
+      }
+    </script>
+    <input type="button" value="PLAY BDAY MUSIC" onclick="play()">
+    <input type="button" value="PAUSE" onclick="pause()">
+    <audio id="audio" src="bdaysong.mp3"></audio>
+    </body>
+</html>
